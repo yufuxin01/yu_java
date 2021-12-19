@@ -1,0 +1,12 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: service-config
+  cloud:
+    nacos:
+      config:
+        server-addr: 123.57.73.149:8848
+        file-extension: yml
+  profiles:
+    active: test

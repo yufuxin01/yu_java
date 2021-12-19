@@ -1,0 +1,195 @@
+atomicInteger   value is  : 1
+atomicInteger   value is  : 2
+atomicInteger   value is  : 3
+atomicInteger   value is  : 4
+atomicInteger   value is  : 5
+atomicInteger   value is  : 6
+atomicInteger   value is  : 7
+atomicInteger   value is  : 8
+atomicInteger   value is  : 9
+atomicInteger   value is  : 10
+超过流量限制，限流了
+atomicInteger   value is  : 1
+atomicInteger   value is  : 2
+atomicInteger   value is  : 3
+atomicInteger   value is  : 4
+atomicInteger   value is  : 5
+atomicInteger   value is  : 6
+atomicInteger   value is  : 7
+atomicInteger   value is  : 8
+atomicInteger   value is  : 9
+atomicInteger   value is  : 10
+超过流量限制，限流了
+atomicInteger   value is  : 1
+atomicInteger   value is  : 2
+atomicInteger   value is  : 3
+atomicInteger   value is  : 4
+atomicInteger   value is  : 5
+atomicInteger   value is  : 6
+atomicInteger   value is  : 7
+atomicInteger   value is  : 8
+atomicInteger   value is  : 9
+atomicInteger   value is  : 10
+超过流量限制，限流了
+atomicInteger   value is  : 1
+atomicInteger   value is  : 2
+atomicInteger   value is  : 3
+atomicInteger   value is  : 4
+atomicInteger   value is  : 5
+atomicInteger   value is  : 6
+atomicInteger   value is  : 7
+atomicInteger   value is  : 8
+atomicInteger   value is  : 9
+atomicInteger   value is  : 10
+超过流量限制，限流了
+atomicInteger   value is  : 1
+atomicInteger   value is  : 2
+atomicInteger   value is  : 3
+atomicInteger   value is  : 4
+atomicInteger   value is  : 5
+atomicInteger   value is  : 6
+atomicInteger   value is  : 7
+atomicInteger   value is  : 8
+atomicInteger   value is  : 9
+atomicInteger   value is  : 10
+超过流量限制，限流了
+atomicInteger   value is  : 1
+atomicInteger   value is  : 2
+atomicInteger   value is  : 3
+atomicInteger   value is  : 4
+atomicInteger   value is  : 5
+atomicInteger   value is  : 6
+atomicInteger   value is  : 7
+atomicInteger   value is  : 8
+atomicInteger   value is  : 9
+atomicInteger   value is  : 10
+超过流量限制，限流了
+=====================================
+漏桶算法限流
+ bucketLimit is : false  , 2017-02-04 18:32:42
+ bucketLimit is : false  , 2017-02-04 18:32:42
+ bucketLimit is : false  , 2017-02-04 18:32:42
+ bucketLimit is : false  , 2017-02-04 18:32:42
+ bucketLimit is : false  , 2017-02-04 18:32:42
+ bucketLimit is : true  , 2017-02-04 18:32:43
+ bucketLimit is : true  , 2017-02-04 18:32:44
+ bucketLimit is : true  , 2017-02-04 18:32:45
+ bucketLimit is : true  , 2017-02-04 18:32:46
+ bucketLimit is : true  , 2017-02-04 18:32:47
+ bucketLimit is : true  , 2017-02-04 18:32:48
+ bucketLimit is : true  , 2017-02-04 18:32:49
+ bucketLimit is : true  , 2017-02-04 18:32:50
+ bucketLimit is : true  , 2017-02-04 18:32:51
+ bucketLimit is : true  , 2017-02-04 18:32:52
+=====================================
+guava令牌桶限流---平滑突发限流
+0.0
+1.195775
+0.197481
+0.19972
+0.197878
+0.199134
+0.198789
+0.198973
+=====================================
+guava令牌桶限流---平滑预热限流
+0.0
+0.276711
+0.236139
+0.19946
+0.159745
+0.108099
+0.099188
+0.097445
+0.099461
+0.099465
+0.099442
+0.099511
+0.091152
+0.098803
+0.098616
+0.099158
+0.098873
+0.099368
+0.099083
+0.099145
+0.099034
+0.098713
+0.098388
+0.098962
+0.098593
+0.099123
+0.099028
+0.099068
+0.099191
+0.099286
+0.09941
+0.099495
+0.099605
+0.087451
+0.099173
+0.099886
+0.087054
+0.098508
+0.097861
+0.098659
+0.09825
+0.099708
+0.084885
+0.098881
+0.099293
+0.099036
+0.099248
+0.099349
+0.100029
+0.0988
+0.0985
+0.098358
+0.098926
+0.098672
+0.098284
+0.099891
+0.096131
+0.098875
+0.098834
+0.099502
+0.095696
+0.098739
+0.099362
+0.099179
+0.099797
+0.094356
+0.09903
+0.099421
+0.099165
+0.099347
+0.09888
+0.098761
+0.098491
+0.099544
+0.090009
+0.09015
+0.089758
+0.090031
+0.089722
+0.089002
+0.099091
+0.09866
+0.098651
+0.098746
+0.098814
+0.098791
+0.098864
+0.098856
+0.098586
+0.098239
+0.09887
+0.09862
+0.09788
+0.099399
+0.099228
+0.099295
+0.098972
+0.098713
+0.098341
+0.098991

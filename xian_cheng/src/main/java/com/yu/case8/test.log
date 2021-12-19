@@ -1,0 +1,19 @@
+Thread:Thread-1 is running
+Thread:Thread-0 is running
+Thread:Thread-2 is running
+Thread:Thread-2 is end
+Thread:Thread-1 is end
+Thread:Thread-0 is end
+main is end,and it spent 5002 ms
+=================================
+Thread:Thread-0 is running
+Thread:Thread-2 is running
+Thread:Thread-1 is running
+Thread:Thread-2 is end
+Thread:Thread-1 is end
+Thread:Thread-0 is end
+main is end,and it spent 5003 ms
+
+
+
+

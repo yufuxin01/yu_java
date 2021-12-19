@@ -1,0 +1,27 @@
+CREATE TABLE `test`.`user` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `createdTime` timestamp NULL,
+  `updatedTime` timestamp NULL,
+  PRIMARY KEY (`id`))
+COMMENT = '用户测试表';
+
+ALTER TABLE `test`.`user`
+ADD INDEX `index` (`id` ASC);
+
+
+SELECT count(*) FROM test.user;
+delete  from test.user;
+SELECT *  FROM test.user  order by  id desc;
+
+select * from test.user  where id <= 10000 and id>=1 order by id ;
+SELECT count(*) as count FROM test.user;
+
+SELECT * FROM test.user;
+
+select * from test.user  where id <= 10000 and id>=1 order by id ;
+select * from test.user  where id <= 20000 and id>=10001 order by id ;
+select * from test.user where id>=900001 and id<=1000000;
+
+mysql核心参数优化
+https://www.cnblogs.com/jenvid/p/8994831.html

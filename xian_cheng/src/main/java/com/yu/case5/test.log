@@ -1,0 +1,10 @@
+
+multi thread ,testMasterWorker:333333833333500000
+multi thread ,process  time is : 29.655s
+multi thread ,process  time is : 42.128s
+
+single thread ,final result is:333333833333500000
+single thread ,process  time is : 5626.504s
+
+
+

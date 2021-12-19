@@ -1,0 +1,178 @@
+D:\javaEnv\jdk1.8.0_162\bin>jcmd  4800   Thread.print
+4800:
+2017-12-17 19:15:01
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.162-b12 mixed mode):
+
+"RMI TCP Connection(8)-172.16.11.51" #25 daemon prio=5 os_prio=0 tid=0x0000000021e18800 nid=0x6398 runnable [0x00000000241de000]
+   java.lang.Thread.State: RUNNABLE
+        at java.net.SocketInputStream.socketRead0(Native Method)
+        at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+        at java.net.SocketInputStream.read(SocketInputStream.java:171)
+        at java.net.SocketInputStream.read(SocketInputStream.java:141)
+        at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+        at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+        - locked <0x000000076fd81780> (a java.io.BufferedInputStream)
+        at java.io.FilterInputStream.read(FilterInputStream.java:83)
+        at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:550)
+        at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+        at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+        at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$6/34868379.run(Unknown Source)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+"JMX server connection timeout 18" #18 daemon prio=5 os_prio=0 tid=0x0000000020351800 nid=0x3450 in Object.wait() [0x000000002163f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+        at java.lang.Object.wait(Native Method)
+        at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:168)
+        - locked <0x000000076fd90178> (a [I)
+        at java.lang.Thread.run(Thread.java:748)
+
+"RMI Scheduler(0)" #17 daemon prio=5 os_prio=0 tid=0x000000002034e800 nid=0x2c98 waiting on condition [0x000000002153e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+        at sun.misc.Unsafe.park(Native Method)
+        - parking to wait for  <0x000000076fd90320> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+        at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+"RMI TCP Accept-0" #15 daemon prio=5 os_prio=0 tid=0x0000000020305800 nid=0x52cc runnable [0x000000002123e000]
+   java.lang.Thread.State: RUNNABLE
+        at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+        at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+        at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+        at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+        - locked <0x000000076fd982b0> (a java.net.SocksSocketImpl)
+        at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+        at java.net.ServerSocket.accept(ServerSocket.java:513)
+        at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+        at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:400)
+        at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:372)
+        at java.lang.Thread.run(Thread.java:748)
+
+"t2" #13 prio=5 os_prio=0 tid=0x0000000020000000 nid=0x19c waiting for monitor entry [0x0000000020a3f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.yrxy.thread.case3.DeadLockTest.run(DeadLockTest.java:25)
+        - waiting to lock <0x000000076fd90588> (a java.lang.String)
+        - locked <0x000000076fd905a0> (a java.lang.String)
+
+"t1" #12 prio=5 os_prio=0 tid=0x000000001ffff800 nid=0x5a60 waiting for monitor entry [0x000000002093f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+        at com.yrxy.thread.case3.DeadLockTest.run(DeadLockTest.java:25)
+        - waiting to lock <0x000000076fd905a0> (a java.lang.String)
+        - locked <0x000000076fd90588> (a java.lang.String)
+
+"Service Thread" #11 daemon prio=9 os_prio=0 tid=0x000000001f5ed800 nid=0x4888 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread3" #10 daemon prio=9 os_prio=2 tid=0x000000001f55d000 nid=0x934 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread2" #9 daemon prio=9 os_prio=2 tid=0x000000001f552000 nid=0x285c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread1" #8 daemon prio=9 os_prio=2 tid=0x000000001f54e000 nid=0x119c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #7 daemon prio=9 os_prio=2 tid=0x000000001f549800 nid=0x4374 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Monitor Ctrl-Break" #6 daemon prio=5 os_prio=0 tid=0x000000001f4e9800 nid=0x2c10 runnable [0x000000001fa3e000]
+   java.lang.Thread.State: RUNNABLE
+        at java.net.SocketInputStream.socketRead0(Native Method)
+        at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+        at java.net.SocketInputStream.read(SocketInputStream.java:171)
+        at java.net.SocketInputStream.read(SocketInputStream.java:141)
+        at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+        at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+        at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+        - locked <0x000000076fd97100> (a java.io.InputStreamReader)
+        at java.io.InputStreamReader.read(InputStreamReader.java:184)
+        at java.io.BufferedReader.fill(BufferedReader.java:161)
+        at java.io.BufferedReader.readLine(BufferedReader.java:324)
+        - locked <0x000000076fd97100> (a java.io.InputStreamReader)
+        at java.io.BufferedReader.readLine(BufferedReader.java:389)
+        at com.intellij.rt.execution.application.AppMainV2$1.run(AppMainV2.java:64)
+
+"Attach Listener" #5 daemon prio=5 os_prio=2 tid=0x000000001f27c800 nid=0x1f44 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=2 tid=0x000000001f27b800 nid=0x5524 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=1 tid=0x000000001f261800 nid=0x2d6c in Object.wait() [0x000000001f73f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+        at java.lang.Object.wait(Native Method)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+        - locked <0x000000076fda0470> (a java.lang.ref.ReferenceQueue$Lock)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+        at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:212)
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x000000000392b000 nid=0x5d34 in Object.wait() [0x000000001f23f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+        - locked <0x000000076fda8178> (a java.lang.ref.Reference$Lock)
+        at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"main" #1 prio=5 os_prio=0 tid=0x0000000003834000 nid=0x5ec in Object.wait() [0x00000000031cf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+        at java.lang.Object.wait(Native Method)
+        - waiting on <0x000000076fd905b8> (a com.yrxy.thread.case3.DeadLockTest)
+        at java.lang.Thread.join(Thread.java:1252)
+        - locked <0x000000076fd905b8> (a com.yrxy.thread.case3.DeadLockTest)
+        at java.lang.Thread.join(Thread.java:1326)
+        at com.yrxy.thread.case3.DeadLockTest.main(DeadLockTest.java:37)
+
+"VM Thread" os_prio=2 tid=0x000000001d369800 nid=0x1348 runnable
+
+"GC product thread#0 (ParallelGC)" os_prio=0 tid=0x000000000384a000 nid=0xe54 runnable
+
+"GC product thread#1 (ParallelGC)" os_prio=0 tid=0x000000000384b800 nid=0x3730 runnable
+
+"GC product thread#2 (ParallelGC)" os_prio=0 tid=0x000000000384d000 nid=0x7f0 runnable
+
+"GC product thread#3 (ParallelGC)" os_prio=0 tid=0x000000000384e800 nid=0x4428 runnable
+
+"GC product thread#4 (ParallelGC)" os_prio=0 tid=0x0000000003851000 nid=0x758 runnable
+
+"GC product thread#5 (ParallelGC)" os_prio=0 tid=0x0000000003853000 nid=0x50e0 runnable
+
+"GC product thread#6 (ParallelGC)" os_prio=0 tid=0x0000000003856000 nid=0x24e8 runnable
+
+"GC product thread#7 (ParallelGC)" os_prio=0 tid=0x0000000003857800 nid=0x1698 runnable
+
+"VM Periodic Task Thread" os_prio=2 tid=0x000000001ffa0000 nid=0x46fc waiting on condition
+
+JNI global references: 231
+
+
+Found one Java-level deadlock:
+=============================
+"t2":
+  waiting to lock monitor 0x0000000020001de8 (object 0x000000076fd90588, a java.lang.String),
+  which is held by "t1"
+"t1":
+  waiting to lock monitor 0x0000000020003128 (object 0x000000076fd905a0, a java.lang.String),
+  which is held by "t2"
+
+Java stack information for the threads listed above:
+===================================================
+"t2":
+        at com.yrxy.thread.case3.DeadLockTest.run(DeadLockTest.java:25)
+        - waiting to lock <0x000000076fd90588> (a java.lang.String)
+        - locked <0x000000076fd905a0> (a java.lang.String)
+"t1":
+        at com.yrxy.thread.case3.DeadLockTest.run(DeadLockTest.java:25)
+        - waiting to lock <0x000000076fd905a0> (a java.lang.String)
+        - locked <0x000000076fd90588> (a java.lang.String)
+
+Found 1 deadlock.

@@ -1,0 +1,24 @@
+
+CREATE TABLE `interface_log` (
+  `LOG_NO` varchar(22) NOT NULL,
+  `SERVER_POOL_NAME` varchar(100) DEFAULT NULL,
+  `CLIENT_POOL_NAME` varchar(100) DEFAULT NULL,
+  `CLIENT_IP` varchar(40) DEFAULT NULL,
+  `SERVER_IP` varchar(40) DEFAULT NULL,
+  `SERVICE_NAME` varchar(100) DEFAULT NULL,
+  `METHOD_NAME` varchar(100) DEFAULT NULL,
+  `INPUT_PARAMS` varchar(2000) DEFAULT NULL,
+  `OUTPUT_PARAMS` varchar(2000) DEFAULT NULL,
+  `KEYWORD` varchar(40) DEFAULT NULL,
+  `COST_TIME` varchar(45) DEFAULT NULL,
+  `EXCEPTION` varchar(2000) DEFAULT NULL,
+  `CREATE_TIME` timestamp NULL DEFAULT NULL,
+  `UPDATE_TIME` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`LOG_NO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='服务访问日志表'
+
+select *  from interface_log;
+select count(*)  from interface_log;
+delete from interface_log;
+drop table interface_log
+

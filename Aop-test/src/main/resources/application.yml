@@ -1,0 +1,6 @@
+server:
+  port: 8082
+logging:
+  file: D://log.log #输出到文件
+  level:
+    root: info

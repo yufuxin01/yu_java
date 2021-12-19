@@ -1,0 +1,14 @@
+begin to excute createSyncOrder
+==CheckService1.check==
+==CheckService2.check==
+==CheckService3.check==
+==finally，create Order==
+end createSyncOrder , it has spent 6343 ms
+===========================================
+begin to excute createParrelOrder
+==CheckService3.check==
+==CheckService2.check==
+==CheckService1.check==
+true==future1.get()&&true==future2.get()&&true==future3.get()
+==finally，create Order==
+end createParrelOrder, it has spent 3030 ms

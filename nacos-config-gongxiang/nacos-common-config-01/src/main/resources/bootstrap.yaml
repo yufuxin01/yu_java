@@ -1,0 +1,17 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: service-01
+  cloud:
+    nacos:
+      config:
+        server-addr: 123.57.73.149:8848
+        file-extension: yml
+        shared-dataids: common.yml
+        refreshable-dataids: common.yml
+#        ext-config:
+#          - data-id: common.yml
+#            group: DEFAULT_GROUP
+#            refresh: true
+#

@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 123.57.73.149:8848
+
+
+# todo 3. 改配置（添加 nacos 地址）

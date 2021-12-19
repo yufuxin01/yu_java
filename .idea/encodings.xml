@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/Aop-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Aop-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EasyExcel/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EasyExcel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Fan-she/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FanYi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FanYi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Interceptor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Interceptor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JDK1.8/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LuoJi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/She_ji_mo_shi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StringUtils-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-gongxiang/nacos-common-config-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-gongxiang/nacos-common-config-01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-gongxiang/nacos-config-common-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-gongxiang/nacos-config-common-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-gongxiang/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-gongxiang/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-service-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-service-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-service-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-service-provider/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos_test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos_test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-nacos-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-nacos-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shou_quan_ren_zheng/authserver-authcode/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shou_quan_ren_zheng/resource-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xian_cheng/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xian_cheng/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
